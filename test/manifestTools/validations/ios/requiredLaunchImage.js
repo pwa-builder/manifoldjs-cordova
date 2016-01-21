@@ -1,8 +1,12 @@
 'use strict';
 
-var validation = require('../../../../lib/manifestTools/validationRules/ios/requiredLaunchImage');
-var validationConstants = require('../../../../lib/manifestTools/validationConstants');
 var should = require('should');
+
+var lib = require('manifoldjs-lib');
+var validationConstants = lib.constants.validation;
+
+var constants = require('../../../../lib/constants'),  
+    validation = require('../../../../lib/validationRules/ios/requiredLaunchImage');
 
 var requiredIconSizes = ['750x1334', '1334x750', '1242x2208', '2208x1242', '640x1136', '640x960', '1536x2048', '2048x1536', '768x1024', '1024x768'];
 var manifestWithRequiredIconSizes = [{sizes : '750x1334'}, {sizes : '1334x750'}, {sizes : '1242x2208'}, {sizes : '2208x1242'},
@@ -14,7 +18,7 @@ describe('Validation - iOS', function () {
       validation({}, function(err, warning) {
         should.not.exist(err);
         should.exist(warning);
-        warning.should.have.property('platform', validationConstants.platforms.ios);
+        warning.should.have.property('platform', constants.platform.subPlatforms.ios.id);
         warning.should.have.property('level', validationConstants.levels.warning);
         warning.should.have.property('member', validationConstants.manifestMembers.icons);
         warning.should.have.property('code', validationConstants.codes.missingImage);
@@ -27,7 +31,7 @@ describe('Validation - iOS', function () {
       validation({ icons: [] }, function(err, warning) {
         should.not.exist(err);
         should.exist(warning);
-        warning.should.have.property('platform', validationConstants.platforms.ios);
+        warning.should.have.property('platform', constants.platform.subPlatforms.ios.id);
         warning.should.have.property('level', validationConstants.levels.warning);
         warning.should.have.property('member', validationConstants.manifestMembers.icons);
         warning.should.have.property('code', validationConstants.codes.missingImage);
@@ -40,7 +44,7 @@ describe('Validation - iOS', function () {
       validation({ icons: [{sizes : '1x1'}] }, function(err, warning) {
         should.not.exist(err);
         should.exist(warning);
-        warning.should.have.property('platform', validationConstants.platforms.ios);
+        warning.should.have.property('platform', constants.platform.subPlatforms.ios.id);
         warning.should.have.property('level', validationConstants.levels.warning);
         warning.should.have.property('member', validationConstants.manifestMembers.icons);
         warning.should.have.property('code', validationConstants.codes.missingImage);
@@ -53,7 +57,7 @@ describe('Validation - iOS', function () {
       validation({ icons: manifestWithRequiredIconSizes.slice(0,1) }, function(err, warning) {
         should.not.exist(err);
         should.exist(warning);
-        warning.should.have.property('platform', validationConstants.platforms.ios);
+        warning.should.have.property('platform', constants.platform.subPlatforms.ios.id);
         warning.should.have.property('level', validationConstants.levels.warning);
         warning.should.have.property('member', validationConstants.manifestMembers.icons);
         warning.should.have.property('code', validationConstants.codes.missingImage);

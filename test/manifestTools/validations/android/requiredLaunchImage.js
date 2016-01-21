@@ -1,8 +1,12 @@
 'use strict';
 
-var validation = require('../../../../lib/manifestTools/validationRules/android/requiredLaunchImage');
-var validationConstants = require('../../../../lib/manifestTools/validationConstants');
 var should = require('should');
+
+var lib = require('manifoldjs-lib');
+var validationConstants = lib.constants.validation;
+
+var constants = require('../../../../lib/constants'),  
+    validation = require('../../../../lib/validationRules/android/requiredLaunchImage');
 
 var requiredIconSizes = ['48x48', '72x72', '96x96', '144x144', '192x192', '512x512'];
 var manifestWithRequiredIconSizes = [{sizes : '48x48'}, {sizes : '72x72'}, {sizes : '96x96'}, {sizes : '144x144'}, {sizes : '192x192'}, {sizes : '512x512'}];
@@ -13,7 +17,7 @@ describe('Validation - Android', function () {
       validation({}, function(err, warning) {
         should.not.exist(err);
         should.exist(warning);
-        warning.should.have.property('platform', validationConstants.platforms.android);
+        warning.should.have.property('platform', constants.platform.subPlatforms.android.id);
         warning.should.have.property('level', validationConstants.levels.warning);
         warning.should.have.property('member', validationConstants.manifestMembers.icons);
         warning.should.have.property('code', validationConstants.codes.missingImage);
@@ -26,7 +30,7 @@ describe('Validation - Android', function () {
       validation({ icons: [] }, function(err, warning) {
         should.not.exist(err);
         should.exist(warning);
-        warning.should.have.property('platform', validationConstants.platforms.android);
+        warning.should.have.property('platform', constants.platform.subPlatforms.android.id);
         warning.should.have.property('level', validationConstants.levels.warning);
         warning.should.have.property('member', validationConstants.manifestMembers.icons);
         warning.should.have.property('code', validationConstants.codes.missingImage);
@@ -39,7 +43,7 @@ describe('Validation - Android', function () {
       validation({ icons: [{sizes : '1x1'}] }, function(err, warning) {
         should.not.exist(err);
         should.exist(warning);
-        warning.should.have.property('platform', validationConstants.platforms.android);
+        warning.should.have.property('platform', constants.platform.subPlatforms.android.id);
         warning.should.have.property('level', validationConstants.levels.warning);
         warning.should.have.property('member', validationConstants.manifestMembers.icons);
         warning.should.have.property('code', validationConstants.codes.missingImage);
@@ -52,7 +56,7 @@ describe('Validation - Android', function () {
       validation({ icons: manifestWithRequiredIconSizes.slice(0,1) }, function(err, warning) {
         should.not.exist(err);
         should.exist(warning);
-        warning.should.have.property('platform', validationConstants.platforms.android);
+        warning.should.have.property('platform', constants.platform.subPlatforms.android.id);
         warning.should.have.property('level', validationConstants.levels.warning);
         warning.should.have.property('member', validationConstants.manifestMembers.icons);
         warning.should.have.property('code', validationConstants.codes.missingImage);
