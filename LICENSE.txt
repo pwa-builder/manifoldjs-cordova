@@ -1,4 +1,4 @@
-ManifoldJS
+manifoldjs-cordova
 
 Copyright (c) Microsoft Corporation
 
