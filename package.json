@@ -1,6 +1,6 @@
 {
   "name": "manifoldjs-cordova",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ManifoldJS Cordova Platform",
   "repository": {
     "type": "git",
@@ -36,7 +36,7 @@
   "dependencies": {
     "q": "^1.4.1",
     "cordova": "5.4.1",
-    "manifoldjs-lib": "^0.1.0"
+    "manifoldjs-lib": "^0.1.1"
   },
   "devDependencies": {
     "blanket": "1.1.6",
