@@ -2,7 +2,7 @@
 
 ## Test
 
-1. Your application uses the same rendering and JavaScript Engine as the Internet Explorer Browser so most of you testing can be done on your website and in the browser.
+1. Your application uses the same rendering and JavaScript Engine as the Microsoft Edge Browser. Most of you testing can be done on your website and in the Edge browser on Windows 10.
 
 2. To test your application on a device, download the ManifoldJS test harness from the Store, and follow the directions. _Coming soon!_
 
