@@ -1,5 +1,5 @@
 {
-  "name": "manifoldjs-cordova",
+  "name": "xanifoldjs-cordova",
   "version": "0.1.4",
   "description": "ManifoldJS Cordova Platform",
   "repository": {
@@ -36,7 +36,7 @@
   "dependencies": {
     "q": "^1.4.1",
     "cordova": "6.1.1",
-    "manifoldjs-lib": "^1.1.0"
+    "xanifoldjs-lib": "^1.1.0"
   },
   "devDependencies": {
     "blanket": "1.1.6",

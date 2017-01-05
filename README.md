@@ -12,7 +12,7 @@ npm install manifoldjs-cordova
 In node.js:
 
 ```
-var platform = require('manifoldjs-cordova')
+var platform = require('xanifoldjs-cordova')
 ```
 
 ## Documentation
