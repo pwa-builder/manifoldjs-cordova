@@ -1,6 +1,6 @@
 { 
   "name": "xanifoldjs-cordova",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "ManifoldJS Cordova Platform",
   "repository": {
     "type": "git",
