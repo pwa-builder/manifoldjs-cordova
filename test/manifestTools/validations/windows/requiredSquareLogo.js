@@ -8,8 +8,8 @@ var validationConstants = lib.constants.validation;
 var constants = require('../../../../lib/constants'),  
     validation = require('../../../../lib/validationRules/windows/requiredSquareLogo');
 
-var validIconSizes = ['120x120', '150x150', '210x210', '270x270'];
-var manifestWithValidIconSizes = [{sizes : '120x120'}, {sizes : '150x150'}, {sizes : '210x210'}, {sizes : '270x270'}];
+var validIconSizes = ['120x120', '150x150','210x210','270x270', '620x300', '868x420', '1116x540'];
+var manifestWithValidIconSizes = [{sizes : '120x120'}, {sizes : '150x150'}, {sizes : '210x210'}, {sizes : '270x270'}, {sizes : '620x300'}, {sizes : '868x420'}, {sizes : '1116x540'}];
 
 describe('Validation - Windows', function () {
   describe('requiredSquareLogo', function () {
