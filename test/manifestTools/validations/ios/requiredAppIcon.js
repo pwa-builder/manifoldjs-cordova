@@ -2,10 +2,10 @@
 
 var should = require('should');
 
-var lib = require('xanifoldjs-lib');
+var lib = require('pwabuilder-lib');
 var validationConstants = lib.constants.validation;
 
-var constants = require('../../../../lib/constants'),  
+var constants = require('../../../../lib/constants'),
     validation = require('../../../../lib/validationRules/ios/requiredAppIcon');
 
 var requiredIconSizes = ['76x76', '120x120', '152x152', '180x180'];

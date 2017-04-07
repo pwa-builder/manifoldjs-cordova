@@ -1,7 +1,7 @@
-{ 
-  "name": "xanifoldjs-cordova",
-  "version": "0.1.10",
-  "description": "ManifoldJS Cordova Platform",
+{
+  "name": "pwabuilder-cordova",
+  "version": "2.0.0-rc.0",
+  "description": "PWA Builder Cordova Platform",
   "repository": {
     "type": "git",
     "url": "https://github.com/manifoldjs/manifoldjs-cordova.git"
@@ -28,6 +28,8 @@
     "W3C",
     "Manifold",
     "ManifoldJS",
+    "PWA",
+    "PWA Builder",
     "Cordova",
     "iOS",
     "Android",
@@ -36,7 +38,7 @@
   "dependencies": {
     "q": "^1.4.1",
     "cordova": "6.1.1",
-    "xanifoldjs-lib": "^1.1.0"
+    "pwabuilder-lib": "^2.0.0-rc"
   },
   "devDependencies": {
     "blanket": "1.1.6",
@@ -58,7 +60,7 @@
   "scripts": {
     "test": "grunt",
     "debug-tests": "mocha test/**/*.js --debug-brk"
-  },  
+  },
   "bugs": {
     "url": "https://github.com/manifoldjs/manifoldjs-cordova/issues"
   },
