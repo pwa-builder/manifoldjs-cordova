@@ -1,18 +1,18 @@
-# manifoldjs-cordova
+# pwabuilder-cordova
 
-## ManifoldJS Cordova Platform
+## PWA Builder Cordova Platform
 
-Cordova platform module for [ManifoldJS](https://github.com/manifoldjs/ManifoldJS), a tool for creating hosted web applications based on a [W3C Web App manifest](http://www.w3.org/TR/appmanifest/).
+Cordova platform module for [PWA Builder](https://github.com/manifoldjs/ManifoldJS), a tool for creating hosted web applications based on a [W3C Web App manifest](http://www.w3.org/TR/appmanifest/).
 
 ## Installation
 
 ```
-npm install manifoldjs-cordova
+npm install pwabuilder-cordova
 ```
 In node.js:
 
 ```
-var platform = require('xanifoldjs-cordova')
+var platform = require('pwabuilder-cordova')
 ```
 
 ## Documentation
@@ -20,7 +20,7 @@ To get started, visit our [wiki](https://github.com/manifoldjs/ManifoldJS/wiki).
 
 ## License
 
-> manifoldjs-cordova
+> pwabuilder-cordova
 
 > Copyright (c) Microsoft Corporation
 

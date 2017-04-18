@@ -4,11 +4,11 @@
 
 1. Your application uses the same rendering and JavaScript Engine as the Chrome Browser so most of you testing can be done on your website and in the browser.
 
-2. To test your application on a device, download the ManifoldJS test harness from the Store, and follow the directions. _Coming soon!_
+2. To test your application on a device, download the PWA Builder test harness from the Store, and follow the directions. _Coming soon!_
 
-3. To test locally, in the folder for your app, type "manifoldjs run android".
+3. To test locally, in the folder for your app, type "pwabuilder run android".
 
-> **Note:** Looking for some debugging tools that work on all your platforms? Try [Vorlon.js](http://www.vorlonjs.com/). It makes mobile testing a breeze, and works inside the app ManifoldJS apps.
+> **Note:** Looking for some debugging tools that work on all your platforms? Try [Vorlon.js](http://www.vorlonjs.com/). It makes mobile testing a breeze, and works inside the app PWA Builder apps.
 
 ## Build
 
